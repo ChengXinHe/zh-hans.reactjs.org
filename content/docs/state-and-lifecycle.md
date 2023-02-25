@@ -64,9 +64,7 @@ setInterval(tick, 1000);
 
 [**在 CodePen 上尝试**](https://codepen.io/gaearon/pen/dpdoYR?editors=0010)
 
-然而，它忽略了一个关键的技术细节：`Clock` 组件需要设置一个计时器，并且需要每秒更新 UI。
-
-理想情况下，我们希望只编写一次代码，便可以让 `Clock` 组件自我更新：
+然而，它忽略了一个关键的技术细节：`Clock` 组件设置一个计时器，并且每秒刷新UI这个需求，应当是 Clock 组件自己的实现细节。
 
 ```js{2}
 root.render(<Clock />);
